@@ -1,3 +1,5 @@
+// Bootstrap Component: Offcanvas dark navbar
+
 function renderNavbar() {
     const navbarHTML = `
     <nav class="navbar navbar-dark bg-dark fixed-top">
@@ -14,23 +16,16 @@ function renderNavbar() {
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a> <!--Modify-->
+              <a class="nav-link active" aria-current="page" href="/html/index.html">Home</a> <!--Modify-->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a> <!--Modify-->
+              <a class="nav-link" href="/html/page1.html">page1</a> <!--Modify-->
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown<!--Modify-->
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#">Action</a></li><!--Modify-->
-                <li><a class="dropdown-item" href="#">Another action</a></li><!--Modify-->
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li><!--Modify-->
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/page2.html">page2</a> <!--Modify-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/page3.html">page3</a> <!--Modify-->
             </li>
           </ul>
         </div>
