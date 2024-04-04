@@ -5,6 +5,23 @@ body {
 
 .content {
     margin: 10%;
-    border: 1px solid red;
     text-align: center;
+}
+
+.thumbnail {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.card {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: whitesmoke;
 }
