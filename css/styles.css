@@ -1,9 +1,9 @@
-body {
+/* body {
     background-color: rgb(18, 18, 18);
     color: whitesmoke;
 }
 
-.content {
+.container {
     margin: 10%;
     text-align: center;
 }
@@ -24,4 +24,111 @@ a {
     width: 200px;
     background-color: rgba(0, 0, 0, 0);
     border-color: whitesmoke;
+} */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(18, 18, 18);
+    color: whitesmoke;
+  }
+
+/* --------------------------- LANDING PAGE --------------------------- */
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  #name, #subtitle {
+    opacity: 0;
+    animation: fadeAndScroll 1.5s ease forwards;
+    font-family:sans-serif;
+  }
+
+  #name {
+    font-size: 6rem;
+    letter-spacing: -3px;
+    word-spacing: -10px;
+  }
+
+  /* Set the scroll indicator to the bottom of the screen, fade it in after 2 seconds,
+     and have it bounce */
+  #scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1.5s ease forwards, bounce 4s infinite alternate;
+    opacity: 0;
+    animation-delay: 2s;
+  }
+  
+  /* Create the individual arrows for the scroll indicator using top and right borders,
+     then rotate them so the corner faces down */
+  #scroll-indicator span {
+    width: 20px;
+    height: 20px;
+    border: 2px solid whitesmoke;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(135deg);
+    margin: 5px;
+  }
+  
+
+/* --------------------------- BIO PAGE --------------------------- */
+
+.bio {
+  height: 100vh;
+  padding: 20% 10%;
+  background-color: rgb(48, 48, 48);
 }
+
+#about {
+  margin-bottom: 50px;
+}
+
+
+
+/* --------------------------- ANIMATIONS --------------------------- */
+
+  /* Fade and scroll animation for name and subtitle */
+  @keyframes fadeAndScroll {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade-in animation for the scoll indicator */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* Bounce animation for the scroll indicator */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
