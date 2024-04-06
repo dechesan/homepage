@@ -5,73 +5,85 @@ body, html {
     height: 100%;
     background-color: rgb(18, 18, 18);
     color: whitesmoke;
+    min-width: 400px;
   }
 
 /* --------------------------- HERO SECTION --------------------------- */
 
-  .hero {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  height: 100vh;
+}
 
-  #bg-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.2;
-  }
+#bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
 
-  #name, #subtitle {
-    opacity: 0;
-    animation: fadeAndScroll 1.5s ease forwards;
-    font-family:sans-serif;
-  }
+#name, #subtitle {
+  opacity: 0;
+  animation: fade-and-slide 1.5s ease forwards;
+  font-family:sans-serif;
+}
 
-  #name {
-    font-size: 6rem;
-    letter-spacing: -3px;
-    word-spacing: -10px;
-  }
+#name {
+  margin-top: 100px;
+  font-size: 6rem;
+  letter-spacing: -3px;
+  word-spacing: -10px;
+}
 
-  /* Set the scroll indicator to the bottom of the screen, fade it in after 2 seconds,
-     and have it bounce */
-  #scroll-indicator {
-    position: absolute;
-    bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0;
-    animation: fadeIn 1.5s ease forwards, bounce 4s infinite alternate;
-    animation-delay: 2s;
-  }
-  
-  /* Create the individual arrows for the scroll indicator using top and right borders,
-     then rotate them so the corner faces down */
-  #scroll-indicator span {
-    width: 20px;
-    height: 20px;
-    border: 2px solid whitesmoke;
-    border-left: none;
-    border-bottom: none;
-    transform: rotate(135deg);
-    margin: 5px;
-  }
-  
+/* Set the scroll indicator to the bottom of the screen, fade it in after 2 seconds,
+   and have it bounce */
+#scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fade-in 2s ease, bounce 4s infinite alternate;
+}
+
+/* Create the individual arrows for the scroll indicator using top and right borders,
+   then rotate them so the corner faces down */
+#scroll-indicator span {
+  width: 20px;
+  height: 20px;
+  border: 2px solid whitesmoke;
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(135deg);
+  margin: 5px;
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: exit;
+}
+
 
 /* --------------------------- ABOUT ME SECTION --------------------------- */
 
 #about {
-  height: 100vh;
+  min-height: 100vh;
   padding: 20% 10%;
   background-color: rgb(48, 48, 48);
+}
+
+#about .container {
+  scale: 0.8;
+  opacity: 0;
+  animation: fade-and-grow linear forwards;
+  animation-timeline: view();
+  animation-range: 10px 500px;
 }
 
 #about h2 {
@@ -83,45 +95,46 @@ body, html {
 #learn-more {
   height: 100vh;
   padding: 10% 10%;
+  text-align: center;
 }
 
 #learn-more h2 {
-  text-align: center;
+  margin-bottom: 10%;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 /* --------------------------- ANIMATIONS --------------------------- */
 
-  /* Fade and scroll animation for name and subtitle */
-  @keyframes fadeAndScroll {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Fade-in animation */
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+/* Fade and scroll animation for name and subtitle */
+@keyframes fade-and-slide {
+  0%   {opacity: 0; transform: translateY(50px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
 
-  /* Bounce animation for the scroll indicator */
-  @keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
+/* Fade-in animation */
+@keyframes fade-in {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/* Bounce animation for the scroll indicator */
+@keyframes bounce {
+  0%   {transform: translateY(0);}
+  50%  {transform: translateY(-10px);}
+  100% {transform: translateY(0);}
+}
+
+/* Fade out animation for the scroll indicator */
+@keyframes fade-out {
+  to {opacity: 0;}
+}
+
+/* Animation for the about me section */
+@keyframes fade-and-grow {
+  0%   {scale: 0.5; opacity: 0;}
+  100% {scale: 1;   opacity: 1;}
+}
