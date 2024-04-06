@@ -6,6 +6,7 @@ body, html {
     background-color: rgb(18, 18, 18);
     color: whitesmoke;
     min-width: 400px;
+    box-sizing: border-box;
   }
 
   .offcanvas {
@@ -102,13 +103,46 @@ body, html {
   text-align: center;
 }
 
+#learn-more .container {
+  max-height: 90vh;
+}
+
 #learn-more h2 {
   margin-bottom: 10%;
 }
 
-.cards {
-  display: flex;
-  flex-flow: row wrap;
+@media (max-width: 750px) {
+  .cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    height: 50vw;
+    width: 40vw;
+    margin-bottom: 10vw;
+  }
+}
+
+@media (min-width: 750px) {
+  .cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    height: 30vw;
+    width: 20vw;
+    margin-bottom: 5vw;
+  }
+}
+
+.card img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
 }
 
 /* --------------------------- ANIMATIONS --------------------------- */
