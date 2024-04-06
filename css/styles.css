@@ -8,6 +8,10 @@ body, html {
     min-width: 400px;
   }
 
+  .offcanvas {
+    font-size: larger;
+  }
+
 /* --------------------------- HERO SECTION --------------------------- */
 
 .hero {

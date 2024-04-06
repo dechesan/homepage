@@ -19,13 +19,13 @@ function renderNavbar() {
               <a class="nav-link active" aria-current="page" href="/html/index.html">Home</a> <!--Modify-->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/html/page1.html">page1</a> <!--Modify-->
+              <a class="nav-link" href="/html/projects.html">Projects</a> <!--Modify-->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/html/page2.html">page2</a> <!--Modify-->
+              <a class="nav-link" href="/html/hobbies.html">Hobbies</a> <!--Modify-->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/html/page3.html">page3</a> <!--Modify-->
+              <a class="nav-link" href="/html/personal-life.html">Personal Life</a> <!--Modify-->
             </li>
           </ul>
         </div>
