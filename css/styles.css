@@ -7,7 +7,7 @@ body, html {
     color: whitesmoke;
   }
 
-/* --------------------------- LANDING PAGE --------------------------- */
+/* --------------------------- HERO SECTION --------------------------- */
 
   .hero {
     position: relative;
@@ -15,7 +15,7 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh;
   }
 
   #bg-img {
@@ -66,19 +66,23 @@ body, html {
   }
   
 
-/* --------------------------- BIO PAGE --------------------------- */
+/* --------------------------- ABOUT ME SECTION --------------------------- */
 
-.bio {
+#about {
   height: 100vh;
   padding: 20% 10%;
   background-color: rgb(48, 48, 48);
 }
 
-#about {
+#about h2 {
   margin-bottom: 50px;
 }
 
+/* --------------------------- LEARN MORE SECTION --------------------------- */
 
+#learn-more {
+  height: 100vh;
+}
 
 /* --------------------------- ANIMATIONS --------------------------- */
 
