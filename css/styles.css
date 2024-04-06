@@ -82,6 +82,11 @@ body, html {
 
 #learn-more {
   height: 100vh;
+  padding: 10% 10%;
+}
+
+#learn-more h2 {
+  text-align: center;
 }
 
 /* --------------------------- ANIMATIONS --------------------------- */
