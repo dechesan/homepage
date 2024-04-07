@@ -71,7 +71,7 @@ body, html {
   margin: 5px;
   animation: fade-out linear;
   animation-timeline: view();
-  animation-range: exit;
+  animation-range: 1%;
 }
 
 
@@ -203,7 +203,9 @@ body, html {
 
 /* Fade out animation for the scroll indicator */
 @keyframes fade-out {
-  to {opacity: 0;}
+  0%   {opacity: 1;}
+  50%  {opacity: 0;}
+  100% {opacity: 0;}
 }
 
 /* Animation for the about me section */
