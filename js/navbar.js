@@ -16,16 +16,19 @@ function renderNavbar() {
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/html/index.html">Home</a> <!--Modify-->
+              <a class="nav-link active" aria-current="page" href="/html/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/html/projects.html">Projects</a> <!--Modify-->
+              <a class="nav-link" href="/html/projects.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/html/hobbies.html">Hobbies</a> <!--Modify-->
+              <a class="nav-link" href="/html/hobbies.html">Hobbies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/html/personal-life.html">Personal Life</a> <!--Modify-->
+              <a class="nav-link" href="/html/personal-life.html">Personal Life</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/contact.html">Contact Me</a>
             </li>
           </ul>
         </div>
