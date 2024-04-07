@@ -1,18 +1,3 @@
-
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: rgb(18, 18, 18);
-    color: whitesmoke;
-    min-width: 400px;
-    box-sizing: border-box;
-  }
-
-  .offcanvas {
-    font-size: larger;
-  }
-
 /* --------------------------- HERO SECTION --------------------------- */
 
 .hero {
