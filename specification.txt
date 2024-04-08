@@ -1,0 +1,6 @@
+10 HTML Tags:
+
+5 CSS Properties:
+
+One-sentence description of how I chose to use JavaScript and Bootstrap:
+
