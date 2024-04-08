@@ -22,10 +22,7 @@ function renderNavbar() {
               <a class="nav-link" href="/html/projects.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/html/hobbies.html">Hobbies</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/html/personal-life.html">Personal Life</a>
+              <a class="nav-link" href="/html/personal-gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/html/contact.html">Contact Me</a>
