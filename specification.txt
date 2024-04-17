@@ -1,6 +1,31 @@
 10 HTML Tags:
+    <header>
+    <section>
+    <img>
+    <h1>
+    <h2>
+    <a>
+    <div>
+    <span>
+    <p>
+    <script>
 
 5 CSS Properties:
+    position
+    display
+    flex-direction
+    justify-direction
+    align-items
 
 One-sentence description of how I chose to use JavaScript and Bootstrap:
+    I used JavaScript to insert the html for my navbar at the start of each HTML file to avoid to
+    copy it to each page.
+    
+    As for Bootstrap, I used the following components:
+        Offcanvas Dark Navbar - For the navbar
+        Card                  - To display each of my projects
+        Carousel              - To show different images within the project cards
+        Email field           - For user's email in contact form
+        Text field            - For user's message in contact form
+        Button                - For submitting contact form
 
